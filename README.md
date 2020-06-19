@@ -28,8 +28,8 @@ yarn dev;
 yarn start;
 ```
 
-## Docker Build
+## Docker LOCAL Build
 
 ```bash
-docker build . -t {image-name}:{tag-name}
+docker build . -t {image-name}:{tag-name} -f Dockerfile.local
 ```
