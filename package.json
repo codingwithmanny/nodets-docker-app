@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "export PORT=5000 && ts-node-dev src/index.ts",
-    "start": "NODE_ENV=production && ts-node src/index.ts"
+    "start": "export NODE_ENV=production && ts-node src/index.ts"
   },
   "dependencies": {
     "@types/cors": "^2.8.6",
