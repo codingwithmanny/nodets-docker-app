@@ -1,7 +1,6 @@
 # Base
 FROM node:12.18-alpine3.12
 
-
 # Build App
 COPY /opt/elasticbeanstalk/deployment/deploymetadata.json /tmp
 

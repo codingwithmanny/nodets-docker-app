@@ -1,11 +1,8 @@
 #!/bin.sh
 
-# Create environment variables
-
-# FILE="$PWD/docker/deploymetadata.json";
-
-# if $PRODUCTION
-# then FILE="/"/opt/elasticbeanstalk/deployment/deploymetadata.json
+export APP_VERSION_LABEL=$(cat /tmp/deploymetadata.json | jq --compact-output --raw-output '.AppVersionLabel')
+export DEPLOYMENT_ID=$(cat /tmp/deploymetadata.json | jq --compact-output --raw-output '.DeploymentId')
+export SERIAL=$(cat /tmp/deploymetadata.json | jq --compact-output --raw-output '.Serial')
 
 # Keep Connection Alive
 set -e
